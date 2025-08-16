@@ -153,3 +153,16 @@ Example output (stdout) of "run_all_tests.sh" bash script can be found in "bash_
 When script finish his work, all log files are available in main catalog:
 
 ![RunBashLogFiles](docks_files/stored_log_files.JPG)
+
+## 6. Project requirements
+
+Python related: 
+- Python >= 3.10
+- UIAutomator2
+- Flask
+- requests
+- behave
+- pytest
+
+External tools:
+- Android Studio
