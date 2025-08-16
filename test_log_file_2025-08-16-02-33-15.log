@@ -1,0 +1,7 @@
+DEBUG:parse:format 'the app is running' -> 'the app is running'
+DEBUG:parse:format 'I read the text of the first input field' -> 'I read the text of the first input field'
+DEBUG:parse:format "the text should be 'Enter the first number'" -> "the text should be 'Enter the first number'"
+INFO:logger_utils:Start application: emulator-5554:com.admsqa.buggycalc
+WARNING:adbutils.install:apkutils is not installed, install it with 'pip install adbutils[apk]'
+INFO:adbutils.install:Success pushed, time used 1 seconds
+INFO:logger_utils:Read first input field text: Enter the first number

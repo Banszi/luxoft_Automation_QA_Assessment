@@ -1,0 +1,519 @@
+yser@DESKTOP-IFFEJ09 MINGW64 ~/PycharmProjects/luxoft_homework
+$ ./run_all_tests.sh
+Running tests from /c/Users/yser/PycharmProjects/luxoft_homework
+Running Android app tests...
+========================================================================= test session starts ==========================================================================
+platform win32 -- Python 3.10.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: C:\Users\yser\PycharmProjects\luxoft_homework
+configfile: pytest.ini
+collected 12 items
+
+android_app_tests/android_app_test.py::test_get_app_info_and_hierarchy
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:24:52 [    INFO] Start application: emulator-5554:com.admsqa.buggycalc (conftest.py:15)
+2025-08-16 02:24:55 [ WARNING] apkutils is not installed, install it with 'pip install adbutils[apk]' (install.py:62)
+2025-08-16 02:24:56 [    INFO] Success pushed, time used 1 seconds (install.py:189)
+2025-08-16 02:25:11 [    INFO] Clear all input fields before the test (conftest.py:31)
+---------------------------------------------------------------------------- live log call -----------------------------------------------------------------------------
+2025-08-16 02:25:25 [    INFO] Android application data: {'currentPackageName': 'com.admsqa.buggycalc', 'displayHeight': 2400, 'displayRotation': 0, 'displaySizeDpX': 41
+1, 'displaySizeDpY': 914, 'displayWidth': 1080, 'productName': 'sdk_gphone64_x86_64', 'screenOn': True, 'sdkInt': 36, 'naturalOrientation': True} (android_app_test.py:6)
+2025-08-16 02:25:25 [    INFO] Android application tree: <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<hierarchy rotation="0">
+  <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.admsqa.buggycalc" content-desc="" checkable="false" checked="false" clickable="f
+alse" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1
+080,2400]" drawing-order="0" hint="" display-id="0">
+    <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.admsqa.buggycalc" content-desc="" checkable="false" checked="false" clickable
+="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0
+][1080,2400]" drawing-order="1" hint="" display-id="0">
+      <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.admsqa.buggycalc" content-desc="" checkable="false" checked="false" clickabl
+e="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,
+0][1080,2400]" drawing-order="2" hint="" display-id="0">
+        <node index="0" text="" resource-id="com.admsqa.buggycalc:id/action_bar_root" class="android.widget.LinearLayout" package="com.admsqa.buggycalc" content-desc=""
+checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected=
+"false" visible-to-user="true" bounds="[0,0][1080,2400]" drawing-order="1" hint="" display-id="0">
+          <node index="0" text="" resource-id="android:id/content" class="android.widget.FrameLayout" package="com.admsqa.buggycalc" content-desc="" checkable="false" ch
+ecked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-u
+ser="true" bounds="[0,0][1080,2400]" drawing-order="2" hint="" display-id="0">
+            <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="com.admsqa.buggycalc" content-desc="" checkable="false" checked="false" c
+lickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" boun
+ds="[0,0][1080,2400]" drawing-order="1" hint="" display-id="0">
+              <node index="0" text="0" resource-id="com.admsqa.buggycalc:id/resultView" class="android.widget.TextView" package="com.admsqa.buggycalc" content-desc="" ch
+eckable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="f
+alse" visible-to-user="true" bounds="[42,42][1038,211]" drawing-order="1" hint="" display-id="0" />
+              <node index="1" text="Enter the first number" resource-id="com.admsqa.buggycalc:id/input1" class="android.widget.EditText" package="com.admsqa.buggycalc" c
+ontent-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="fals
+e" selected="false" visible-to-user="true" bounds="[42,211][1038,329]" drawing-order="2" hint="Enter the first number" display-id="0" />
+              <node index="2" text="Enter the second number" resource-id="com.admsqa.buggycalc:id/input2" class="android.widget.EditText" package="com.admsqa.buggycalc"
+content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="fal
+se" selected="false" visible-to-user="true" bounds="[42,329][1038,447]" drawing-order="3" hint="Enter the second number" display-id="0" />
+              <node index="3" text="+" resource-id="com.admsqa.buggycalc:id/addButton" class="android.widget.Button" package="com.admsqa.buggycalc" content-desc="" check
+able="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false"
+ visible-to-user="true" bounds="[42,447][1038,573]" drawing-order="4" hint="" display-id="0" />
+              <node index="4" text="-" resource-id="com.admsqa.buggycalc:id/subtractButton" class="android.widget.Button" package="com.admsqa.buggycalc" content-desc=""
+checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="f
+alse" visible-to-user="true" bounds="[42,573][1038,699]" drawing-order="5" hint="" display-id="0" />
+              <node index="5" text="/" resource-id="com.admsqa.buggycalc:id/divideButton" class="android.widget.Button" package="com.admsqa.buggycalc" content-desc="" ch
+eckable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="fal
+se" visible-to-user="true" bounds="[42,699][1038,825]" drawing-order="6" hint="" display-id="0" />
+              <node index="6" text="*" resource-id="com.admsqa.buggycalc:id/multiplyButton" class="android.widget.Button" package="com.admsqa.buggycalc" content-desc=""
+checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="f
+alse" visible-to-user="true" bounds="[42,825][1038,951]" drawing-order="7" hint="" display-id="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked="false" clickable="f
+alse" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="true" bounds="[0,0][1
+080,63]" drawing-order="0" hint="" display-id="0">
+    <node index="0" text="" resource-id="com.android.systemui:id/status_bar_launch_animation_container" class="android.widget.FrameLayout" package="com.android.systemui"
+ content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password=
+"false" selected="false" visible-to-user="true" bounds="[0,0][1080,63]" drawing-order="1" hint="" display-id="0" />
+    <node index="1" text="" resource-id="com.android.systemui:id/status_bar_container" class="android.widget.FrameLayout" package="com.android.systemui" content-desc=""
+checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected=
+"false" visible-to-user="true" bounds="[0,0][1080,63]" drawing-order="2" hint="" display-id="0">
+      <node index="0" text="" resource-id="com.android.systemui:id/status_bar" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkabl
+e="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false"
+visible-to-user="true" bounds="[0,0][1080,63]" drawing-order="1" hint="" display-id="0">
+        <node index="0" text="" resource-id="com.android.systemui:id/status_bar_contents" class="android.widget.LinearLayout" package="com.android.systemui" content-desc
+="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selec
+ted="false" visible-to-user="true" bounds="[0,0][1027,63]" drawing-order="2" hint="" display-id="0">
+          <node index="0" text="" resource-id="com.android.systemui:id/status_bar_start_side_container" class="android.widget.FrameLayout" package="com.android.systemui"
+ content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password=
+"false" selected="false" visible-to-user="true" bounds="[11,0][513,63]" drawing-order="1" hint="" display-id="0">
+            <node index="0" text="" resource-id="com.android.systemui:id/status_bar_start_side_content" class="android.widget.FrameLayout" package="com.android.systemui"
+ content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password=
+"false" selected="false" visible-to-user="true" bounds="[11,0][310,63]" drawing-order="1" hint="" display-id="0">
+              <node index="0" text="" resource-id="com.android.systemui:id/status_bar_start_side_except_heads_up" class="android.widget.LinearLayout" package="com.androi
+d.systemui" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false
+" password="false" selected="false" visible-to-user="true" bounds="[11,0][310,63]" drawing-order="2" hint="" display-id="0">
+                <node index="0" text="12:25" resource-id="com.android.systemui:id/clock" class="android.widget.TextView" package="com.android.systemui" content-desc="12:
+25 AM" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" se
+lected="false" visible-to-user="true" bounds="[11,10][136,53]" drawing-order="2" hint="" display-id="0" />
+                <node index="1" text="" resource-id="com.android.systemui:id/notification_icon_area" class="android.widget.FrameLayout" package="com.android.systemui" co
+ntent-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="fa
+lse" selected="false" visible-to-user="true" bounds="[136,0][310,63]" drawing-order="5" hint="" display-id="0">
+                  <node index="0" text="" resource-id="com.android.systemui:id/notificationIcons" class="android.view.ViewGroup" package="com.android.systemui" content-d
+esc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" se
+lected="false" visible-to-user="true" bounds="[136,0][310,63]" drawing-order="1" hint="" display-id="0">
+                    <node index="0" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="Security &amp; privacy notificat
+ion: " checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" se
+lected="false" visible-to-user="true" bounds="[136,0][194,63]" drawing-order="1" hint="" display-id="0" />
+                    <node index="1" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="Settings notification: " checkab
+le="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false"
+ visible-to-user="true" bounds="[194,0][252,63]" drawing-order="2" hint="" display-id="0" />
+                    <node index="2" text="" resource-id="" class="android.widget.ImageView" package="com.android.systemui" content-desc="Android System notification: " c
+heckable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="
+false" visible-to-user="true" bounds="[252,0][310,63]" drawing-order="3" hint="" display-id="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node index="1" text="" resource-id="com.android.systemui:id/status_bar_end_side_container" class="android.widget.FrameLayout" package="com.android.systemui" c
+ontent-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="f
+alse" selected="false" visible-to-user="true" bounds="[513,0][1016,63]" drawing-order="3" hint="" display-id="0">
+            <node index="0" text="" resource-id="com.android.systemui:id/status_bar_end_side_content" class="android.widget.LinearLayout" package="com.android.systemui"
+content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="
+false" selected="false" visible-to-user="true" bounds="[876,0][1016,63]" drawing-order="1" hint="" display-id="0">
+              <node index="0" text="" resource-id="com.android.systemui:id/system_icons" class="android.widget.LinearLayout" package="com.android.systemui" content-desc=
+"" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" select
+ed="false" visible-to-user="true" bounds="[876,2][1016,60]" drawing-order="2" hint="" display-id="0">
+                <node index="0" text="" resource-id="com.android.systemui:id/statusIcons" class="android.widget.LinearLayout" package="com.android.systemui" content-desc
+="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selec
+ted="false" visible-to-user="true" bounds="[884,2][985,60]" drawing-order="1" hint="" display-id="0">
+                  <node index="0" text="" resource-id="com.android.systemui:id/wifi_combo" class="android.widget.FrameLayout" package="com.android.systemui" content-desc
+="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selec
+ted="false" visible-to-user="true" bounds="[884,2][930,60]" drawing-order="14" hint="" display-id="0">
+                    <node index="0" text="" resource-id="com.android.systemui:id/wifi_group" class="android.widget.LinearLayout" package="com.android.systemui" content-d
+esc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" se
+lected="false" visible-to-user="true" bounds="[891,2][930,60]" drawing-order="1" hint="" display-id="0">
+                      <node index="0" text="" resource-id="com.android.systemui:id/wifi_combo" class="android.widget.FrameLayout" package="com.android.systemui" content-
+desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" s
+elected="false" visible-to-user="true" bounds="[891,11][930,50]" drawing-order="2" hint="" display-id="0">
+                        <node index="0" text="" resource-id="com.android.systemui:id/wifi_signal" class="android.widget.ImageView" package="com.android.systemui" content
+-desc="Wifi signal full." checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false"
+password="false" selected="false" visible-to-user="true" bounds="[891,11][930,50]" drawing-order="1" hint="" display-id="0" />
+                      </node>
+                    </node>
+                  </node>
+                  <node index="2" text="" resource-id="com.android.systemui:id/mobile_combo" class="android.widget.FrameLayout" package="com.android.systemui" content-de
+sc="T-Mobile, no signal." checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false"
+password="false" selected="false" visible-to-user="true" bounds="[930,2][969,60]" drawing-order="16" hint="" display-id="0">
+                    <node index="0" text="" resource-id="com.android.systemui:id/mobile_group" class="android.widget.LinearLayout" package="com.android.systemui" content
+-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false"
+selected="false" visible-to-user="true" bounds="[930,2][969,60]" drawing-order="1" hint="" display-id="0">
+                      <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="com.android.systemui" content-desc="" checkable="false" checked=
+"false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" visible-to-user="t
+rue" bounds="[930,11][969,50]" drawing-order="4" hint="" display-id="0">
+                        <node index="0" text="" resource-id="com.android.systemui:id/mobile_signal" class="android.widget.ImageView" package="com.android.systemui" conte
+nt-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false
+" selected="false" visible-to-user="true" bounds="[930,11][969,50]" drawing-order="1" hint="" display-id="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+PASSED                                                                                                                                                            [  8%]
+-------------------------------------------------------------------------- live log teardown ---------------------------------------------------------------------------
+2025-08-16 02:25:25 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_first_input_field_init_value
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:25:26 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                            [ 16%]
+-------------------------------------------------------------------------- live log teardown ---------------------------------------------------------------------------
+2025-08-16 02:25:28 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_second_input_field_init_value
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:25:28 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                            [ 25%]
+-------------------------------------------------------------------------- live log teardown ---------------------------------------------------------------------------
+2025-08-16 02:25:30 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_first_input_field_valid_value
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:25:30 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                            [ 33%]
+-------------------------------------------------------------------------- live log teardown ---------------------------------------------------------------------------
+2025-08-16 02:25:33 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_second_input_field_valid_value
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:25:35 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                            [ 41%]
+-------------------------------------------------------------------------- live log teardown ---------------------------------------------------------------------------
+2025-08-16 02:25:37 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_first_input_field_invalid_value
+---------------------------------------------------------------------------- live log setup ----------------------------------------------------------------------------
+2025-08-16 02:25:38 [    INFO] Clear all input fields before the test (conftest.py:31)
+FAILED                                                                                                                                                                             [ 50%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:40 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_second_input_field_invalid_value
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:41 [    INFO] Clear all input fields before the test (conftest.py:31)
+FAILED                                                                                                                                                                             [ 58%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:43 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_init_value_of_res_field
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:43 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                                             [ 66%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:44 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_add_button
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:44 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                                             [ 75%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:48 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_sub_button
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:49 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                                             [ 83%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:52 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_div_button
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:53 [    INFO] Clear all input fields before the test (conftest.py:31)
+PASSED                                                                                                                                                                             [ 91%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:56 [    INFO] Clear all input fields after the test (conftest.py:35)
+
+android_app_tests/android_app_test.py::test_mul_button
+------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------
+2025-08-16 02:25:56 [    INFO] Clear all input fields before the test (conftest.py:31)
+FAILED                                                                                                                                                                             [100%]
+----------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------
+2025-08-16 02:25:59 [    INFO] Clear all input fields after the test (conftest.py:35)
+2025-08-16 02:26:00 [    INFO] Shut down the application after test session: emulator-5554:com.admsqa.buggycalc (conftest.py:22)
+
+
+======================================================================================= FAILURES ========================================================================================
+_________________________________________________________________________ test_first_input_field_invalid_value __________________________________________________________________________
+
+app_handler = <uiautomator2.Device object at 0x00000271E84621D0>
+
+    def test_first_input_field_invalid_value(app_handler):
+        invalid_value = "@"
+        init_text_of_first_field = "Enter the first number"
+        app_handler(resourceId=app_controllers.INPUT_FIELD_1).set_text(invalid_value)
+        # app_handler(resourceId=app_controllers.INPUT_FIELD_1).wait(timeout=5)
+        read_text = app_handler(resourceId=app_controllers.INPUT_FIELD_1).get_text()
+>       assert read_text == init_text_of_first_field, \
+            f"Input field 1 should contain following value: {init_text_of_first_field}; got: {read_text}"
+E       AssertionError: Input field 1 should contain following value: Enter the first number; got: @
+E       assert '@' == 'Enter the first number'
+E
+E         - Enter the first number
+E         + @
+
+android_app_tests\android_app_test.py:48: AssertionError
+---------------------------------------------------------------------------------- Captured log setup -----------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:31 Clear all input fields before the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+----------------------------------------------------------------------------------- Captured log call -----------------------------------------------------------------------------------
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'setText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, '@')}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'getText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+--------------------------------------------------------------------------------- Captured log teardown ---------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:35 Clear all input fields after the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+_________________________________________________________________________ test_second_input_field_invalid_value _________________________________________________________________________
+
+app_handler = <uiautomator2.Device object at 0x00000271E84621D0>
+
+    def test_second_input_field_invalid_value(app_handler):
+        invalid_value = "A"
+        init_text_of_second_field = "Enter the second number"
+        app_handler(resourceId=app_controllers.INPUT_FIELD_2).set_text(invalid_value)
+        # app_handler(resourceId=app_controllers.INPUT_FIELD_1).wait(timeout=5)
+        read_text = app_handler(resourceId=app_controllers.INPUT_FIELD_2).get_text()
+>       assert read_text == init_text_of_second_field, \
+            f"Input field 2 should contain following value: {init_text_of_second_field}; got: {read_text}"
+E       AssertionError: Input field 2 should contain following value: Enter the second number; got: A
+E       assert 'A' == 'Enter the second number'
+E
+E         - Enter the second number
+E         + A
+
+android_app_tests\android_app_test.py:58: AssertionError
+---------------------------------------------------------------------------------- Captured log setup -----------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:31 Clear all input fields before the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+----------------------------------------------------------------------------------- Captured log call -----------------------------------------------------------------------------------
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'setText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 'A')}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'getText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+--------------------------------------------------------------------------------- Captured log teardown ---------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:35 Clear all input fields after the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+____________________________________________________________________________________ test_mul_button ____________________________________________________________________________________
+
+app_handler = <uiautomator2.Device object at 0x00000271E84621D0>
+
+    def test_mul_button(app_handler):
+        first_in_field_valid_val = "2"
+        second_in_field_valid_val = "5"
+        expected_value = str(float(int(first_in_field_valid_val) * int(second_in_field_valid_val)))
+        app_handler(resourceId=app_controllers.INPUT_FIELD_1).set_text(first_in_field_valid_val)
+        app_handler(resourceId=app_controllers.INPUT_FIELD_2).set_text(second_in_field_valid_val)
+        app_handler(resourceId=app_controllers.MUL_BUTTON).click()
+        read_text = app_handler(resourceId=app_controllers.RESULT_FIELD).get_text()
+>       assert expected_value == read_text, \
+            f"Mul numbers: {first_in_field_valid_val} and {second_in_field_valid_val}. " \
+            f"Expected result: {expected_value}; got: {read_text}"
+E       AssertionError: Mul numbers: 2 and 5. Expected result: 10.0; got: 7.0
+E       assert '10.0' == '7.0'
+E
+E         - 7.0
+E         + 10.0
+
+android_app_tests\android_app_test.py:116: AssertionError
+---------------------------------------------------------------------------------- Captured log setup -----------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:31 Clear all input fields before the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+----------------------------------------------------------------------------------- Captured log call -----------------------------------------------------------------------------------
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'setText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, '2')}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'setText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, '5')}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/multiplyButton'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'objInfo', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/multiplyButton'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'click', 'params': (540.0, 888.0)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/resultView'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'getText', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSiblingSel
+ector': [], 'resourceId': 'com.admsqa.buggycalc:id/resultView'},)}
+--------------------------------------------------------------------------------- Captured log teardown ---------------------------------------------------------------------------------
+INFO     logger_utils:conftest.py:35 Clear all input fields after the test
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input1'},)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'waitForExists', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSibl
+ingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'}, 20000)}
+DEBUG    uiautomator2.core:core.py:111 http request POST /jsonrpc/0 {'jsonrpc': '2.0', 'id': 1, 'method': 'clearTextField', 'params': ({'mask': 2097152, 'childOrSibling': [], 'childOrSib
+lingSelector': [], 'resourceId': 'com.admsqa.buggycalc:id/input2'},)}
+INFO     logger_utils:conftest.py:22 Shut down the application after test session: emulator-5554:com.admsqa.buggycalc
+================================================================================ short test summary info ================================================================================
+USING RUNNER: behave.runner:Runner
+Feature: Check initial value in first input field # android_app_tests/features/gherkin_test.feature:1
+  In order to ensure the app starts correctly
+  As a user
+  I want the first input field to have a proper initial value
+    Then the text should be 'Enter the first number'  # android_app_tests/features/steps/gherkin_test.py:29 0.000ss
+    Then the text should be 'Enter the first number'  # android_app_tests/features/steps/gherkin_test.py:29
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+3 steps passed, 0 failed, 0 skipped
+Took 0min 25.606s
+Running Flask API tests...
+======================================================================================== test session starts ========================================================================================
+platform win32 -- Python 3.10.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: C:\Users\yser\PycharmProjects\luxoft_homework
+configfile: pytest.ini
+collected 5 items
+
+api_calls_test.py::test_get_users
+------------------------------------------------------------------------------------------ live log setup -------------------------------------------------------------------------------------------
+2025-08-16 02:26:39 [    INFO] Enabling HTTP Flask server from script: mock_api.py (conftest.py:27)
+------------------------------------------------------------------------------------------- live log call -------------------------------------------------------------------------------------------
+2025-08-16 02:26:39 [    INFO] Get users using request endpoint: http://localhost:5003//users (api_calls_test.py:12)
+2025-08-16 02:26:41 [    INFO] Read users list: [{'email': 'alice@example.com', 'id': 1, 'name': 'Alice'}, {'email': 'bob@example.com', 'id': 2, 'name': 'Bob'}] (api_calls_test.py:19)
+PASSED                                                                                                                                                                                         [ 20%]
+api_calls_test.py::test_get_user_valid_id
+------------------------------------------------------------------------------------------- live log call -------------------------------------------------------------------------------------------
+2025-08-16 02:26:41 [    INFO] Get user using request endpoint: http://localhost:5003//users/1 (api_calls_test.py:26)
+2025-08-16 02:26:43 [    INFO] Read user entry: {'email': 'alice@example.com', 'id': 1, 'name': 'Alice'} (api_calls_test.py:33)
+PASSED                                                                                                                                                                                         [ 40%]
+api_calls_test.py::test_get_user_invalid_id
+------------------------------------------------------------------------------------------- live log call -------------------------------------------------------------------------------------------
+2025-08-16 02:26:43 [    INFO] Get user with invalid id <1000> using request endpoint: http://localhost:5003//users/1000 (api_calls_test.py:53)
+2025-08-16 02:26:45 [    INFO] Get user with invalid id <999> using request endpoint: http://localhost:5003//users/999 (api_calls_test.py:61)
+PASSED                                                                                                                                                                                         [ 60%]
+api_calls_test.py::test_add_user_valid_data
+------------------------------------------------------------------------------------------- live log call -------------------------------------------------------------------------------------------
+2025-08-16 02:26:47 [    INFO] Add user: {'name': 'Sebastian Stach', 'email': 'stachseb24@gmail.com'} using request endpoint: http://localhost:5003//users (api_calls_test.py:71)
+2025-08-16 02:26:49 [    INFO] Get users using request endpoint: http://localhost:5003//users (api_calls_test.py:78)
+2025-08-16 02:26:52 [    INFO] Read users list: [{'email': 'alice@example.com', 'id': 1, 'name': 'Alice'}, {'email': 'bob@example.com', 'id': 2, 'name': 'Bob'}, {'email': 'stachseb24@gmail.com', 'id
+': 3, 'name': 'Sebastian Stach'}] (api_calls_test.py:85)
+PASSED                                                                                                                                                                                         [ 80%]
+api_calls_test.py::test_add_user_invalid_data
+------------------------------------------------------------------------------------------- live log call -------------------------------------------------------------------------------------------
+2025-08-16 02:26:52 [    INFO] Add invalid user: {'name': 'Sebastian Stach'} using request endpoint: http://localhost:5003//users (api_calls_test.py:97)
+2025-08-16 02:26:54 [    INFO] Add invalid user: {'email': 'stachseb24@gmail.com'} using request endpoint: http://localhost:5003//users (api_calls_test.py:105)
+PASSED                                                                                                                                                                                         [100%]
+----------------------------------------------------------------------------------------- live log teardown -----------------------------------------------------------------------------------------
+2025-08-16 02:26:56 [    INFO] Disabling HTTP Flask server from script: mock_api.py (conftest.py:37)
+
+
+======================================================================================== 5 passed in 17.65s =========================================================================================
+Copying test log files...
+Running ADB LOGCAT...
+Running ADB DUMP SYS...
+Error with service 'android.hardware.authsecret.IAuthSecret/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.biometrics.fingerprint.IFingerprint/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.bluetooth.IBluetoothHci/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.bluetooth.offload.leaudio.IHciProxy/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.camera.provider.ICameraProvider/internal/0' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.camera.provider.ICameraProvider/internal/1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.cas.IMediaCasService/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.contexthub.IContextHub/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.gatekeeper.IGatekeeper/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.gnss.IGnss/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.graphics.allocator.IAllocator/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.graphics.composer3.IComposer/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.health.IHealth/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.identity.IIdentityCredentialStore/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.light.ILights/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.media.c2.IComponentStore/software' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.neuralnetworks.IDevice/nnapi-sample_all' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.neuralnetworks.IDevice/nnapi-sample_quant' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.neuralnetworks.IDevice/nnapi-sample_sl_shim' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.power.IPower/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.power.stats.IPowerStats/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.config.IRadioConfig/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.data.IRadioData/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.ims.IRadioIms/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.ims.media.IImsMedia/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.messaging.IRadioMessaging/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.modem.IRadioModem/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.network.IRadioNetwork/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.sap.ISap/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.sim.IRadioSim/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.radio.voice.IRadioVoice/slot1' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.rebootescrow.IRebootEscrow/default' while dumping: FAILED_TRANSACTION
+Can't find service: android.hardware.security.keymint.IKeyMintDevice/default
+Error with service 'android.hardware.security.keymint.IRemotelyProvisionedComponent/default' while dumping: FAILED_TRANSACTION
+Can't find service: android.hardware.security.secureclock.ISecureClock/default
+Can't find service: android.hardware.security.sharedsecret.ISharedSecret/default
+Error with service 'android.hardware.security.sharedsecret.ISharedSecret/gatekeeper' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.sensors.ISensors/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.thermal.IThermal/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.threadnetwork.IThreadChip/chip0' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.usb.IUsb/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.uwb.IUwb/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.vibrator.IVibrator/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.vibrator.IVibratorManager/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.wifi.IWifi/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.hardware.wifi.supplicant.ISupplicant/default' while dumping: FAILED_TRANSACTION
+Can't find service: android.service.gatekeeper.IGateKeeperService
+Error with service 'android.system.net.netd.INetd/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.system.suspend.ISystemSuspend/default' while dumping: FAILED_TRANSACTION
+Error with service 'android.system.vold.IVold/default' while dumping: FAILED_TRANSACTION
+Can't find service: artd
+Can't find service: dnsresolver
+Can't find service: incident
+Can't find service: installd
+Error with service 'manager' while dumping: FAILED_TRANSACTION
+Can't find service: mdns
+Can't find service: netd
+Error with service 'ot_daemon' while dumping: FAILED_TRANSACTION
+Can't find service: suspend_control
+Can't find service: suspend_control_internal
+Can't find service: vold
+Error with service 'wifinl80211' while dumping: FAILED_TRANSACTION
+All tests finished. Logs copied to /c/Users/yser/PycharmProjects/luxoft_homework
+(venv)
+yser@DESKTOP-IFFEJ09 MINGW64 ~/PycharmProjects/luxoft_homework

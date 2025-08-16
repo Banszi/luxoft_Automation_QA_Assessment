@@ -1,0 +1,29 @@
+INFO:logger_utils:Enabling HTTP Flask server from script: mock_api.py
+INFO:logger_utils:Get users using request endpoint: http://localhost:5003//users
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "GET /users HTTP/1.1" 200 151
+INFO:logger_utils:Read users list: [{'email': 'alice@example.com', 'id': 1, 'name': 'Alice'}, {'email': 'bob@example.com', 'id': 2, 'name': 'Bob'}]
+INFO:logger_utils:Get user using request endpoint: http://localhost:5003//users/1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "GET /users/1 HTTP/1.1" 200 65
+INFO:logger_utils:Read user entry: {'email': 'alice@example.com', 'id': 1, 'name': 'Alice'}
+INFO:logger_utils:Get user with invalid id <1000> using request endpoint: http://localhost:5003//users/1000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "GET /users/1000 HTTP/1.1" 404 32
+INFO:logger_utils:Get user with invalid id <999> using request endpoint: http://localhost:5003//users/999
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "GET /users/999 HTTP/1.1" 500 39
+INFO:logger_utils:Add user: {'name': 'Sebastian Stach', 'email': 'stachseb24@gmail.com'} using request endpoint: http://localhost:5003//users
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "POST /users HTTP/1.1" 201 78
+INFO:logger_utils:Get users using request endpoint: http://localhost:5003//users
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "GET /users HTTP/1.1" 200 240
+INFO:logger_utils:Read users list: [{'email': 'alice@example.com', 'id': 1, 'name': 'Alice'}, {'email': 'bob@example.com', 'id': 2, 'name': 'Bob'}, {'email': 'stachseb24@gmail.com', 'id': 3, 'name': 'Sebastian Stach'}]
+INFO:logger_utils:Add invalid user: {'name': 'Sebastian Stach'} using request endpoint: http://localhost:5003//users
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "POST /users HTTP/1.1" 400 30
+INFO:logger_utils:Add invalid user: {'email': 'stachseb24@gmail.com'} using request endpoint: http://localhost:5003//users
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5003
+DEBUG:urllib3.connectionpool:http://localhost:5003 "POST /users HTTP/1.1" 400 30
+INFO:logger_utils:Disabling HTTP Flask server from script: mock_api.py
