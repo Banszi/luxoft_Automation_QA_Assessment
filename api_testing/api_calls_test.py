@@ -8,6 +8,7 @@ from logger_utils import logger
 
 
 def test_get_users(init_users_list):
+    """Check result of GET USERS request"""
     endpoint = f"{SERVER_ADDRESS}/{ApiEndpoints.GET_USERS_ENDPOINT}"
     logger.info(f"Get users using request endpoint: {endpoint}")
     response = requests.get(endpoint)
@@ -21,6 +22,7 @@ def test_get_users(init_users_list):
 
 
 def test_get_user_valid_id(init_users_list):
+    """Check result of GET USER with valid ID request"""
     valid_user_id = 1
     endpoint = f"{SERVER_ADDRESS}/{ApiEndpoints.GET_USER_ENDPOINT % valid_user_id}"
     logger.info(f"Get user using request endpoint: {endpoint}")
@@ -48,6 +50,7 @@ def test_get_user_valid_id(init_users_list):
 
 
 def test_get_user_invalid_id():
+    """Check result of GET USER with invalid ID request"""
     invalid_id = 1000
     endpoint = f"{SERVER_ADDRESS}/{ApiEndpoints.GET_USER_ENDPOINT % invalid_id}"
     logger.info(f"Get user with invalid id <{invalid_id}> using request endpoint: {endpoint}")
@@ -66,6 +69,7 @@ def test_get_user_invalid_id():
 
 
 def test_add_user_valid_data():
+    """Check result of ADD USER with valid data request"""
     user_data = {"name": "Sebastian Stach", "email": "stachseb24@gmail.com"}
     endpoint = f"{SERVER_ADDRESS}/{ApiEndpoints.ADD_USER_ENDPOINT}"
     logger.info(f"Add user: {user_data} using request endpoint: {endpoint}")
@@ -92,6 +96,7 @@ def test_add_user_valid_data():
 
 
 def test_add_user_invalid_data():
+    """Check result of ADD USER with invalid data request"""
     user_data = {"name": "Sebastian Stach"}
     endpoint = f"{SERVER_ADDRESS}/{ApiEndpoints.ADD_USER_ENDPOINT}"
     logger.info(f"Add invalid user: {user_data} using request endpoint: {endpoint}")
